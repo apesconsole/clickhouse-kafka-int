@@ -12,7 +12,7 @@ CREATE TABLE kafka_push
 Name String) 
 ENGINE = Kafka
 SETTINGS kafka_broker_list = 'apesconsole:9092',
-         kafka_topic_list = 'iot_device_data_topic',
+         kafka_topic_list = 'kafka_push_example',
          kafka_group_name = 'consumer_group_push',
          kafka_format = 'JSONEachRow';
 		 
