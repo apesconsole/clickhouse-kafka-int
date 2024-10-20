@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9093
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      auto-offset-reset: earliest
+
+  datasource:
+    url: jdbc:clickhouse://localhost:8123/default
+    username: default
+    password:
+    driver-class-name: com.clickhouse.jdbc.ClickHouseDriver
